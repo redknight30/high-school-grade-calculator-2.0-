@@ -1,0 +1,158 @@
+print("wellcome to grade calculator 2.0")
+print('''
+1=%
+2=1/2
+ON=Ontario
+BC=British Columbia
+QC=Quebec
+AB=Alberta
+SK=Saskachewan
+------------------------------------------------------------------------------------------------------------
+First you choose to ether type in if you whant to figer out your grade from a fracshun (1/2) or prisentige(%)           
+Then you choose what province you want                                          
+Then enter in the numbers the same way you wuld to calculate percentages         
+EX:                                                                            
+enter what mode you whant 1,2:2                                                                                              
+enter the marks you have:70                                                   
+enter the total marks pasable:100
+what provance do you whant:ON
+70.0 %
+Ontario
+you got a 2-!                                                                  
+------------------------------------------------------------------------------------------------------------''')
+num=int(input("enter what mode you whant [1,2]:"))
+# %
+if num==1:
+    total_2=float(input("enter your precentige:"))
+    total_3= round(total_2,0)
+    num_0=input("what provance do you whant:")
+# 1/2
+if num==2:
+    num_1=float(input("enter the marks you have:"))
+    num_2=float(input("enter the total marks pasable:"))
+    # math
+    total_1= num_1/num_2
+    total_2=total_1*100
+    total_3= round(total_2,0)
+    num_0=input("what provance do you whant:")
+    print(total_3,"%")
+# GRADES
+# Ontario
+if num_0=="ON" or num_0=="on":
+    print ("Ontario")
+    if total_3 >=0 and total_3 <=49:
+        print ("you got a 0!")
+    if total_3 >=50 and total_3 <=52:
+        print ("you got a 1-!")
+    if total_3 >=53 and total_3 <=56:
+        print ("you got a 1!")
+    if total_3 >=57 and total_3 <=59:
+        print ("you got a 1+!")
+    if total_3 >=60 and total_3 <=62:
+        print ("you got a 2-!")
+    if total_3 >=63 and total_3 <=66:
+        print ("you got a 2!")
+    if total_3 >=67 and total_3 <=69:
+        print ("you got a 2+!")
+    if total_3 >=70 and total_3 <=72:
+        print ("you got a 3-!")
+    if total_3 >=73 and total_3 <=76:
+         print ("you got a 3!")
+    if total_3 >=77 and total_3 <=79:
+         print ("you got a 3+!")
+    if total_3 >=80 and total_3 <=86:
+         print ("you got a 4-!")
+    if total_3 >=87 and total_3 <=94:
+         print ("you got a 4!")
+    if total_3 >=95 and total_3 <=100:
+         print ("you got a 4+!")
+# British Columbia
+if num_0=="BC" or num_0=="bc":
+    print ("British Columbia (grade 10-12)")
+    if total_3 >=0 and total_3 <=49:
+        print ("you got a F!")
+    if total_3 >=50 and total_3 <=59:
+        print ("you got a C-!")
+    if total_3 >=60 and total_3 <=66:
+        print ("you got a C!")
+    if total_3 >=67 and total_3 <=72:
+        print ("you got a C+!")
+    if total_3 >=73 and total_3 <=85:
+        print ("you got a B!")
+    if total_3 >=86 and total_3 <=100:
+        print ("you got a A!")
+# Quebec
+if num_0=="QC" or num_0=="qc":
+    print("Quebec")
+    if total_3 >=0 and total_3 <=29:
+        print ("you got a Q!")
+    if total_3 >=30 and total_3 <=34:
+        print ("you got a F!")
+    if total_3 >=35 and total_3 <=39:
+        print ("you got a E!")
+    if total_3 >=40 and total_3 <=44:
+        print ("you got a D-!")
+    if total_3 >=45 and total_3 <=49:
+        print ("you got a D!")
+    if total_3 >=50 and total_3 <=54:
+        print ("you got a D+!")
+    if total_3 >=55 and total_3 <=59:
+        print ("you got a C-!")
+    if total_3 >=60 and total_3 <=64:
+        print ("you got a C!")
+    if total_3 >=65 and total_3 <=69:
+        print ("you got a C+!")
+    if total_3 >=70 and total_3 <=74:
+        print ("you got a B-!")
+    if total_3 >=75 and total_3 <=79:
+        print ("you got a B!")
+    if total_3 >=80 and total_3 <=84:
+        print ("you got a B+!")
+    if total_3 >=85 and total_3 <=89:
+        print ("you got a A-!")
+    if total_3 >=90 and total_3 <=94:
+        print ("you got a A!")
+    if total_3 >=95 and total_3 <=100:
+        print ("you got a A+!")
+# Alberta
+if num_0=="AB" or num_0=="ab":
+    print ("Alberta")
+    if total_3 >=0 and total_3 <=49:
+        print ("you got a F!")
+    if total_3 >=50 and total_3 <=54:
+        print ("you got a D!")
+    if total_3 >=55 and total_3 <=59:
+        print ("you got a D!")
+    if total_3 >=60 and total_3 <=62:
+       print ("you got a C-!")
+    if total_3 >=63 and total_3 <=66:
+        print ("you got a C!")
+    if total_3 >=67 and total_3 <=69:
+        print ("you got a C+!")
+    if total_3 >=70 and total_3 <=72:
+       print ("you got a B-!")
+    if total_3 >=73 and total_3 <=76:
+        print ("you got a B!")
+    if total_3 >=77 and total_3 <=79:
+        print ("you got a B+!")
+    if total_3 >=80 and total_3 <=84:
+        print ("you got a A-!")
+    if total_3 >=85 and total_3 <=89:
+        print ("you got a A!")
+    if total_3 >=90 and total_3 <=100:
+        print ("you got a A+!")
+# Saskachewan
+if num_0=="SK" or num_0=="sk":
+    print ("Saskachewan")
+    if total_3 >=0 and total_3 <=49:
+        print ("you got a F!")
+    if total_3 >=50 and total_3 <=59:
+        print ("you got a D!")
+    if total_3 >=60 and total_3 <=69:
+        print ("you got a C!")
+    if total_3 >=70 and total_3 <=79:
+        print ("you got a B!")
+    if total_3 >=80 and total_3 <=89:
+        print ("you got a A!")
+    if total_3 >=90 and total_3 <=100:
+        print ("you got a A+!")
