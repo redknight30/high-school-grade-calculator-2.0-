@@ -18,7 +18,7 @@ enter the total marks pasable:100
 what provance do you whant:ON
 70.0 %
 Ontario
-you got a 2-!                                                                  
+you got a 3-!                                                                
 ------------------------------------------------------------------------------------------------------------''')
 num=int(input("enter what mode you whant [1,2]:"))
 # %
